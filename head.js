@@ -6,14 +6,10 @@ const assertEqual = function(actual, expected) {
   console.log(actual === expected ? acceptMsg : errorMsg);
 };
 
-
-let myArr = [];
-
 function head(myArr) {
-  if (myArr.length == 0) {
+  if (myArr.length === 0) {
     return undefined;
   }
-
   const myHead = myArr[0];
   return myHead;
 }
