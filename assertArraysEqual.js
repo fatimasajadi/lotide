@@ -7,3 +7,5 @@ const assertArraysEqual = function(actual, expected) {
 
   console.log(eqArrays(actual, expected) ? acceptMsg : errorMsg);
 };
+
+module.exports = assertArraysEqual;
