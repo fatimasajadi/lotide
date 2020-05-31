@@ -25,9 +25,5 @@ const findKey = function(obj, callback) {
   return str;
 };
 
-
 let result1 = findKey(obj1, x => x.stars === 2);
 console.log(result1);
-
-//Test
-assertEqual(findKey(obj1, x => x.stars === 2), "noma");

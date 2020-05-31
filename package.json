@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@fatimasajadi/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the Lodash library.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "mocha"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/fatimasajadi/lotide-.git"
   },
-  "author": "",
+  "author": "Fatima Sajadi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fatimasajadi/lotide-/issues"

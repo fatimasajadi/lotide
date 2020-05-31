@@ -1,8 +1,6 @@
 const assertArraysEqual = function(actual, expected) {
   const acceptMsg = `✅  Assertion Passed:  ${actual}  ===  ${expected}`;
   const errorMsg = `🛑  Assertion Failed:  ${actual}  !==  ${expected}`;
-
-
   console.log(eqArrays(actual, expected) ? acceptMsg : errorMsg);
 };
 
@@ -16,7 +14,6 @@ function eqArrays(arr1, arr2) {
   }
   return true;
 }
-
 const letterPositions = function(sentence) {
   let obj = {};
   str = sentence.replace(/\s/g, '');
@@ -27,14 +24,9 @@ const letterPositions = function(sentence) {
     } else {
       obj[sentence[i]].push(i);
     }
-
   }
   return obj;
-
-
 }
-console.log(letterPositions("lighthouse in the house"));
 
 //test
-
 console.log(assertArraysEqual(letterPositions("hello").h, [0]));

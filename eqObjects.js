@@ -1,12 +1,8 @@
 const assertEqual = function(actual, expected) {
-
   const acceptMsg = `✅  Assertion Passed:  ${actual}  ===  ${expected}`;
   const errorMsg = `🛑  Assertion Failed:  ${actual}  !==  ${expected}`;
-
-
   console.log(eqObjects(actual, expected) ? acceptMsg : errorMsg);
 };
-
 
 const eqObjects = function(o1, o2) {
   for (let p in o1) {
@@ -36,6 +32,3 @@ const eqArrays = function(arr1, arr2) {
   }
   return true;
 };
-const cd2 = { c: "1", d: ["2", 3, 4] };
-const cd = { c: "1", d: ["2", 3] };
-console.log(eqObjects(cd, cd2)); // => false

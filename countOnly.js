@@ -1,9 +1,6 @@
 const assertEqual = function(actual, expected) {
-
   const acceptMsg = `✅  Assertion Passed:  ${actual}  ===  ${expected}`;
   const errorMsg = `🛑  Assertion Failed:  ${actual}  !==  ${expected}`;
-
-
   console.log(actual === expected ? acceptMsg : errorMsg);
 };
 
@@ -16,13 +13,10 @@ const countOnly = function(allItems, itemsToCount) {
       if (!results[name]) {
         results[name] = 0;
       }
-
       results[name] += 1;
     }
   }
-
   return results;
-
 };
 
 

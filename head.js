@@ -6,6 +6,6 @@ const head = function(myArr) {
   }
   const myHead = myArr[0];
   return myHead;
-}
+};
 
 module.exports = head;

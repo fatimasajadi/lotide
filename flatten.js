@@ -1,8 +1,6 @@
 const assertArraysEqual = function(actual, expected) {
   const acceptMsg = `✅  Assertion Passed:  ${actual}  ===  ${expected}`;
   const errorMsg = `🛑  Assertion Failed:  ${actual}  !==  ${expected}`;
-
-
   console.log(eqArrays(actual, expected) ? acceptMsg : errorMsg);
 };
 
@@ -25,17 +23,12 @@ const flatten = function(nestedArray) {
   for (let item of nestedArray) {
     if (Array.isArray(item) === false) {
       alreadyFlatArray.push(item);
-
     } else {
       for (let j of item)
         flatArray.push(j);
-
     }
-
-
   }
   finalFlatArray = flatArray.concat(alreadyFlatArray);
   return finalFlatArray;
-
 };
 console.log(flatten([1, [2, 4]]));
