@@ -1,12 +1,6 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = require('./assertEqual');
 
-  const acceptMsg = `✅  Assertion Passed:  ${actual}  ===  ${expected}`;
-  const errorMsg = `🛑  Assertion Failed:  ${actual}  !==  ${expected}`;
-
-  console.log(actual === expected ? acceptMsg : errorMsg);
-};
-
-function head(myArr) {
+const head = function(myArr) {
   if (myArr.length === 0) {
     return undefined;
   }
@@ -14,4 +8,4 @@ function head(myArr) {
   return myHead;
 }
 
-assertEqual(head([]), 5);
+module.exports = head;

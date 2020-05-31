@@ -1,12 +1,6 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = require('./assertEqual');
 
-  const acceptMsg = `✅  Assertion Passed:  ${actual}  ===  ${expected}`;
-  const errorMsg = `🛑  Assertion Failed:  ${actual}  !==  ${expected}`;
-
-  console.log(actual === expected ? acceptMsg : errorMsg);
-};
 let myArr = ["banana", "apple", "orange"];
-
 const tail = function(myArr) {
   if (myArr.length === 0) {
     return undefined;
