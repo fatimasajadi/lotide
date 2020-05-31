@@ -1,6 +1,6 @@
 const assertEqual = require('./assertEqual');
-
 let myArr = ["banana", "apple", "orange"];
+
 const tail = function(myArr) {
   if (myArr.length === 0) {
     return undefined;
@@ -11,3 +11,5 @@ const tail = function(myArr) {
 };
 
 assertEqual(myArr.length, 3);
+
+module.exports = tail;
